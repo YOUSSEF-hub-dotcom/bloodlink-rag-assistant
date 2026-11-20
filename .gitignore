@@ -1,0 +1,28 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Model / tool caches
+.hf_cache/
+.cache/
+models/
+*.gguf
+*.onnx
+*.safetensors
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: bloodlink-pg
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bloodlink_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - bloodlink_pgdata:/var/lib/postgresql/data
+
+volumes:
+  bloodlink_pgdata:
